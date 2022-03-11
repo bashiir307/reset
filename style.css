@@ -1,0 +1,147 @@
+@font-face {
+    font-family: 'Source Sans Pro';
+    src: url(./fonts/Montserrat-Regular.ttf);
+}
+
+
+body{
+    padding: 0;
+    margin: 0;
+    background: #4B5054;
+    background: -webkit-linear-gradient(left, #4B5054, #262324);
+    background: -o-linear-gradient(left, #4B5054, #262324);
+    background: -moz-linear-gradient(left, #4B5054, #262324);
+    background: linear-gradient(left, #4B5054, #262324);
+    font-family: 'Source Sans Pro';
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 2rem;
+    margin-left: 4rem;
+    margin-right: 4rem;
+    border-radius: 5px;
+    background: #fff;
+    padding: 5rem; 
+    height: 400px;   
+    
+}
+.container img{
+    width: 25%;
+}
+.container img:hover{
+    cursor: pointer;
+    transform: scale(1.3);
+    transition: 2s;
+    /* animation: shake 3s; */
+    /* animation-iteration-count: infinite; */
+}
+form span{
+    font-size: 26px;
+}
+span h6{
+    margin-top: 3px;
+    
+}
+form input{
+    width: 100%;
+    padding: 20px;
+    font-size: 14px;
+    background: #e6e6e6;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    letter-spacing: 1.3px;
+    border: none;
+    margin-top: 20px;
+}
+button{
+    width: 193px;
+    height: 50px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 25px;
+    background: #FD4F00;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #fff;
+}
+button:hover{
+    background: #4B5054;
+    cursor: pointer;
+    transition: 2s;
+}
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }
+
+@media only screen 
+  and (min-device-width: 280px) 
+  and (max-device-width: 767px){
+    
+    body{
+        background: #fff;
+    }
+
+    .container{
+        display: block;
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 10rem;
+        margin-bottom: 0;
+        
+    }
+    .container img{
+        width: 70%;
+        margin: 20px;
+        margin-left: 0;
+    }
+    form{
+        margin-left: -10px;
+    }
+    form span{
+        font-size: 20px;
+        
+        
+    }
+    form input{
+        width: 100%;
+        font-size: 16px;
+    }
+    form button{
+        width: 150px;
+        margin-top: 0px;
+    }
+
+  }
+
+  @media only screen and (min-width: 768px) and (max-width: 1220px){
+    .container{
+        margin-top: 10em;
+    }  
+    .container img{
+          width: 35%;
+          margin-left: -40px;
+          margin-right: 40px;
+      }
+      form span{
+          font-size: 22px;
+      }
+      form{
+          margin-left: 20px;
+      }
+      }
+      form input{
+        
+      }
+  }  
